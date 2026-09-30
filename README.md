@@ -5,7 +5,9 @@
 ##### G1 - TRABALHO PRÁTICO - JDBC e PostgreSQL
 
 **Aluno:** Romário Escobar de Souza
+
 **Professor:** Alexandre Neves Louzada
+
 **Tema 14:** Catálogo de Filmes e Gêneros Cinematográficos (`GeneroFilme` 1:N `Filme`)
 
 
