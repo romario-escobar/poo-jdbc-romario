@@ -1,0 +1,13 @@
+# Compilados
+*.class
+bin/
+target/
+out/
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+.classpath
+.project
+.settings/
