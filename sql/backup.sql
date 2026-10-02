@@ -5,7 +5,7 @@
 -- Dumped from database version 18.6
 -- Dumped by pg_dump version 18.6
 
--- Started on 2026-09-30 20:43:41
+-- Started on 2026-10-02 20:51:34
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -122,11 +122,16 @@ INSERT INTO public.filme VALUES (2, 'The Matrix', 'Matrix', 136, 1999, 1);
 INSERT INTO public.filme VALUES (3, 'Inception', 'A Origem', 148, 2010, 1);
 INSERT INTO public.filme VALUES (4, 'Toy Story', 'Toy Story', 81, 1995, 2);
 INSERT INTO public.filme VALUES (5, 'Spirited Away', 'A Viagem de Chihiro', 125, 2001, 2);
-INSERT INTO public.filme VALUES (6, 'Coco', 'Viva: A Vida ‚ uma Festa', 105, 2017, 2);
 INSERT INTO public.filme VALUES (7, 'The Dark Knight', 'Batman: O Cavaleiro das Trevas', 152, 2008, 3);
-INSERT INTO public.filme VALUES (8, 'Mad Max: Fury Road', 'Mad Max: Estrada da F£ria', 120, 2015, 3);
 INSERT INTO public.filme VALUES (9, 'The Shawshank Redemption', 'Um Sonho de Liberdade', 142, 1994, 4);
 INSERT INTO public.filme VALUES (10, 'Parasite', 'Parasita', 132, 2019, 4);
+INSERT INTO public.filme VALUES (6, 'Coco', 'Viva: A Vida é uma Festa', 105, 2017, 2);
+INSERT INTO public.filme VALUES (8, 'Mad Max: Fury Road', 'Mad Max: Estrada da Fúria', 120, 2015, 3);
+INSERT INTO public.filme VALUES (11, 'The Hangover', 'Se Beber, Não Case!', 100, 2009, 5);
+INSERT INTO public.filme VALUES (12, 'Scary Movie', 'Todo Mundo em Pânico', 88, 2000, 5);
+INSERT INTO public.filme VALUES (13, 'O Auto da Compadecida', 'O Auto da Compadecida', 104, 2000, 5);
+INSERT INTO public.filme VALUES (14, 'Mission: Impossible', 'Missão: Impossível', 110, 1996, 3);
+INSERT INTO public.filme VALUES (15, 'Hacksaw Ridge', 'Até o Último Homem', 139, 2016, 4);
 
 
 --
@@ -135,10 +140,11 @@ INSERT INTO public.filme VALUES (10, 'Parasite', 'Parasita', 132, 2019, 4);
 -- Data for Name: genero_filme; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-INSERT INTO public.genero_filme VALUES (1, 'Fic‡Æo Cient¡fica', '12');
-INSERT INTO public.genero_filme VALUES (2, 'Anima‡Æo', 'L');
-INSERT INTO public.genero_filme VALUES (3, 'A‡Æo', '14');
 INSERT INTO public.genero_filme VALUES (4, 'Drama', '14');
+INSERT INTO public.genero_filme VALUES (1, 'Ficção Científica', '12');
+INSERT INTO public.genero_filme VALUES (2, 'Animação', 'L');
+INSERT INTO public.genero_filme VALUES (3, 'Ação', '14');
+INSERT INTO public.genero_filme VALUES (5, 'Comédia', '12');
 
 
 --
@@ -147,7 +153,7 @@ INSERT INTO public.genero_filme VALUES (4, 'Drama', '14');
 -- Name: filme_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.filme_id_seq', 10, true);
+SELECT pg_catalog.setval('public.filme_id_seq', 15, true);
 
 
 --
@@ -156,7 +162,7 @@ SELECT pg_catalog.setval('public.filme_id_seq', 10, true);
 -- Name: genero_filme_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.genero_filme_id_seq', 4, true);
+SELECT pg_catalog.setval('public.genero_filme_id_seq', 5, true);
 
 
 --
@@ -186,7 +192,7 @@ ALTER TABLE ONLY public.filme
     ADD CONSTRAINT filme_genero_id_fkey FOREIGN KEY (genero_id) REFERENCES public.genero_filme(id) ON DELETE RESTRICT;
 
 
--- Completed on 2026-09-30 20:43:42
+-- Completed on 2026-10-02 20:51:35
 
 --
 -- PostgreSQL database dump complete
