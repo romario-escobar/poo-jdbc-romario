@@ -4,7 +4,8 @@
 ## CENTRO UNIVERSITÁRIO LA SALLE DO RIO DE JANEIRO
 ### CURSO DE BACHARELADO EM SISTEMAS DE INFORMAÇÃO
 #### PROGRAMAÇÃO ORIENTADA A OBJETOS
-##### G1 - TRABALHO PRÁTICO - JDBC e PostgreSQL
+##### G1 - TRABALHO PRÁTICO
+###### JDBC e PostgreSQL
 
 ![Java](https://img.shields.io/badge/Java-8%2B-orange?logo=openjdk&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-JDBC-336791?logo=postgresql&logoColor=white)
